@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- table 包含 tr，tr 包含 td -->
+    <!-- 表格属性添加在table标签上 -->
+    <!-- caption嵌套在table标签里面，th替换td -->
+    <!-- thead、tbody、tfoot ->结构 -->
+    <!-- 跨行合并、跨列合并 -->
+    <table border="1" width="500" height="200">
+        <caption><h3>Eden成员</h3></caption>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>小分队</th>
+                <th>箱活歌曲</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>乱凪砂</td>
+                <td rowspan="2">Adam</td>
+                <td>Absolute Perfect</td>
+            </tr>
+            <tr>
+                <td>七种茨</td>
+                <td>Meiting Rouge Soul</td>
+            </tr>
+            <tr>
+                <td>巴日和</td>
+                <td rowspan="2">Eve</td>
+                <td>Faith Conquest</td>
+            </tr>
+            <tr>
+                <td>涟纯</td>
+                <td>EXCEED</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">园门</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
