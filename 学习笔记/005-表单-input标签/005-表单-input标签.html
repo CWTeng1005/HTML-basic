@@ -6,20 +6,31 @@
     <title>Document</title>
 </head>
 <body>
-    账号：<input type="text" placeholder="请输入用户名">
-    <br><br>
-    密码：<input type="password" placeholder="请输入密码">
-    <br><br>
-    单选框：<input type="radio">
-    <br><br>
-    <!-- checked：默认选中（可用于checkbox） ；name：分组（用于单选）-->
-    所属分队：<input type="radio" name="team" checked>Adam
-             <input type="radio" name="team">Eve
-    <br><br>
-    多选框：<input type="checkbox">
-    <br><br>
-    <!-- multipe：用于上传多个文件 -->
-    上传文件：<input type="file" multiple>
-    <br><br>
+    <form>
+        账号：<input type="text" placeholder="请输入用户名">
+        <br><br>
+
+        密码：<input type="password" placeholder="请输入密码">
+        <br><br>
+
+        <!-- checked：默认选中（可用于checkbox） ；name：分组（用于单选）-->
+        <!-- radio：单选框 -->
+        所属分队：<input type="radio" name="team" checked>Adam
+                 <input type="radio" name="team">Eve
+        <br><br>
+
+        多选框：<input type="checkbox">
+        <br><br>
+
+        <!-- multipe：用于上传多个文件 -->
+        上传文件：<input type="file" multiple>
+        <br><br>
+
+        <!-- 按钮功能需要将各种input标签包裹起来 -->
+        <!-- value是更改按钮内的文本内容 -->
+        <input type="submit" value="登录">
+        <input type="reset" value="重置">
+        <input type="button" value="无功能按钮">
+    </form>
 </body>
 </html>
